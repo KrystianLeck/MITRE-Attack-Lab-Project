@@ -7,7 +7,7 @@ The project evaluates the detection and mitigation capabilities of a Windows-bas
 
 ## Test Environment
 * **Virtualization:** Oracle VirtualBox (Isolated Host-Only Network).
-* **Endpoint:** Windows 10 Pro (IP: `192.168.56.101`).
+* **Endpoint:** Windows 10 (IP: `192.168.56.101`).
 * **Attack Tool:** [Atomic Red Team](https://github.com/redcanaryco/atomic-red-team) (Invoke-AtomicRedTeam module).
 * **Logging & Monitoring:**
     * **Sysmon:** Custom configuration capturing Event IDs: 1 (Process Creation), 3 (Network Connection), 7 (Image Loaded), 8 (CreateRemoteThread), 10 (ProcessAccess), 11 (FileCreate).
