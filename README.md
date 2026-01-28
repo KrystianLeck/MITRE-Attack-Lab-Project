@@ -1,4 +1,4 @@
-# MITRE ATT&CK: Modeling and Evaluation of Defense Strategies 🛡️
+# MITRE ATT&CK: Modeling and Evaluation of Defense Strategies 
 
 ## Project Overview
 Technical implementation of a Master's Thesis: **"Application of the MITRE ATT&CK Matrix in Modeling and Assessing the Effectiveness of Defense Strategies Against Cyber Attack Techniques"**. 
