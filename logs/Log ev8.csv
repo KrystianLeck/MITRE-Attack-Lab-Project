@@ -1,0 +1,16 @@
+Poziom,Data i godzina,Źródło,Identyfikator zdarzenia,Kategoria zadania
+Informacje,08.06.2025 15:01:23,Microsoft-Windows-Sysmon,8,CreateRemoteThread detected (rule: CreateRemoteThread),"CreateRemoteThread detected:
+RuleName: -
+UtcTime: 2025-06-08 13:01:23.095
+SourceProcessGuid: {3517838a-8975-6845-4601-000000000700}
+SourceProcessId: 3392
+SourceImage: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+TargetProcessGuid: {3517838a-89a2-6845-4c01-000000000700}
+TargetProcessId: 6920
+TargetImage: <unknown process>
+NewThreadId: 8
+StartAddress: 0x00007FF78E818F50
+StartModule: -
+StartFunction: -
+SourceUser: DESKTOP-GKJBBHR\Admin
+TargetUser: DESKTOP-GKJBBHR\Admin"

@@ -1,0 +1,29 @@
+Poziom,Data i godzina,Źródło,Identyfikator zdarzenia,Kategoria zadania
+Pełne,08.06.2025 15:01:24,Microsoft-Windows-PowerShell,4104,Execute a Remote Command,"Creating Scriptblock text (1 of 1):
+function __cmdletization_BindCommonParameters
+{
+    param(
+        $__cmdletization_objectModelWrapper,
+        $myPSBoundParameters
+    )       
+                
+
+        if ($myPSBoundParameters.ContainsKey('CimSession')) { 
+            $__cmdletization_objectModelWrapper.PSObject.Properties['CimSession'].Value = $myPSBoundParameters['CimSession'] 
+        }
+                    
+
+        if ($myPSBoundParameters.ContainsKey('ThrottleLimit')) { 
+            $__cmdletization_objectModelWrapper.PSObject.Properties['ThrottleLimit'].Value = $myPSBoundParameters['ThrottleLimit'] 
+        }
+                    
+
+        if ($myPSBoundParameters.ContainsKey('AsJob')) { 
+            $__cmdletization_objectModelWrapper.PSObject.Properties['AsJob'].Value = $myPSBoundParameters['AsJob'] 
+        }
+                    
+
+}
+
+ScriptBlock ID: 8f47d697-cc9f-41d7-8536-1063b50bddb3
+Path: "

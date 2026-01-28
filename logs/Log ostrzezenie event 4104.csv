@@ -1,0 +1,39 @@
+Poziom,Data i godzina,Źródło,Identyfikator zdarzenia,Kategoria zadania
+Ostrzeżenia,08.06.2025 15:01:23,Microsoft-Windows-PowerShell,4104,Execute a Remote Command,"Creating Scriptblock text (2 of 2):
+assThru)
+            }
+        }
+    }
+
+            }
+        }
+        catch
+        {
+            $__cmdletization_exceptionHasBeenThrown = $true
+            throw
+        }
+    }
+        
+
+    End {
+        try
+        {
+            if (-not $__cmdletization_exceptionHasBeenThrown)
+            {
+                $__cmdletization_objectModelWrapper.EndProcessing()
+            }
+        }
+        catch
+        {
+            throw
+        }
+    }
+
+    # .EXTERNALHELP MSFT_NetOffloadGlobalSetting.cdxml-Help.xml
+}
+Microsoft.PowerShell.Core\Export-ModuleMember -Function 'Set-NetOffloadGlobalSetting' -Alias '*'
+        
+
+
+ScriptBlock ID: 0e6af837-fb0a-4edc-8493-fea2bdd7c803
+Path: "

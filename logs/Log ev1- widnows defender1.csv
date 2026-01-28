@@ -1,0 +1,25 @@
+Poziom,Data i godzina,Źródło,Identyfikator zdarzenia,Kategoria zadania
+Informacje,08.06.2025 15:01:23,Microsoft-Windows-Sysmon,1,Process Create (rule: ProcessCreate),"Process Create:
+RuleName: -
+UtcTime: 2025-06-08 13:01:23.129
+ProcessGuid: {3517838a-89a3-6845-4d01-000000000700}
+ProcessId: 7048
+Image: C:\Windows\System32\SecurityHealthHost.exe
+FileVersion: 4.18.1907.16384 (WinBuild.160101.0800)
+Description: Windows Security Health Host
+Product: Microsoft® Windows® Operating System
+Company: Microsoft Corporation
+OriginalFileName: SecurityHealthHost.exe
+CommandLine: C:\Windows\System32\SecurityHealthHost.exe {08728914-3F57-4D52-9E31-49DAECA5A80A} -Embedding
+CurrentDirectory: C:\Windows\system32\
+User: DESKTOP-GKJBBHR\Admin
+LogonGuid: {3517838a-8394-6845-6623-020000000000}
+LogonId: 0x22366
+TerminalSessionId: 1
+IntegrityLevel: Medium
+Hashes: MD5=BC84EF67269A2AEF02EBA5AA8FB69BEC,SHA256=08C05285CE0BA345A39C08D70D6686706CDCB847A220A1CA34F5BFECC8CD8857,IMPHASH=4E28FDA241BEFA94F219E0683850258F
+ParentProcessGuid: {3517838a-8393-6845-0f00-000000000700}
+ParentProcessId: 772
+ParentImage: C:\Windows\System32\svchost.exe
+ParentCommandLine: C:\Windows\system32\svchost.exe -k DcomLaunch -p
+ParentUser: ZARZĄDZANIE NT\SYSTEM"

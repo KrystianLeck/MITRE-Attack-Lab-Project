@@ -1,0 +1,25 @@
+Poziom,Data i godzina,Źródło,Identyfikator zdarzenia,Kategoria zadania
+Informacje,08.06.2025 15:01:19,Microsoft-Windows-Sysmon,1,Process Create (rule: ProcessCreate),"Process Create:
+RuleName: -
+UtcTime: 2025-06-08 13:01:19.869
+ProcessGuid: {3517838a-899f-6845-4901-000000000700}
+ProcessId: 4864
+Image: C:\Windows\System32\HOSTNAME.EXE
+FileVersion: 10.0.19041.1 (WinBuild.160101.0800)
+Description: Hostname APP
+Product: Microsoft® Windows® Operating System
+Company: Microsoft Corporation
+OriginalFileName: hostname.exe
+CommandLine: ""C:\Windows\system32\HOSTNAME.EXE""
+CurrentDirectory: C:\Windows\system32\
+User: DESKTOP-GKJBBHR\Admin
+LogonGuid: {3517838a-8394-6845-2023-020000000000}
+LogonId: 0x22320
+TerminalSessionId: 1
+IntegrityLevel: High
+Hashes: MD5=33AFAA43B84BDEAB12E02F9DBD2B2EE0,SHA256=A90C3FB350A11C6F6A6EFA9607987D924D1DE65E09CA9FAF2E0E0E00531EE335,IMPHASH=5CD891320C666621E9783444DB8CBA78
+ParentProcessGuid: {3517838a-8975-6845-4601-000000000700}
+ParentProcessId: 3392
+ParentImage: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+ParentCommandLine: ""C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"" 
+ParentUser: DESKTOP-GKJBBHR\Admin"

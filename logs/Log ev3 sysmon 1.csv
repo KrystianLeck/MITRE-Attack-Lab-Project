@@ -1,0 +1,20 @@
+Poziom,Data i godzina,Źródło,Identyfikator zdarzenia,Kategoria zadania
+Informacje,05.06.2025 22:04:26,Microsoft-Windows-Sysmon,3,Network connection detected (rule: NetworkConnect),"Network connection detected:
+RuleName: -
+UtcTime: 2025-06-05 20:04:25.329
+ProcessGuid: {3517838a-f64b-6841-4207-000000000500}
+ProcessId: 9212
+Image: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+User: DESKTOP-GKJBBHR\Admin
+Protocol: tcp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.56.101
+SourceHostname: DESKTOP-GKJBBHR
+SourcePort: 60877
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.56.101
+DestinationHostname: DESKTOP-GKJBBHR
+DestinationPort: 135
+DestinationPortName: epmap"

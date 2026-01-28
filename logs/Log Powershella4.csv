@@ -1,0 +1,8 @@
+Poziom,Data i godzina,Źródło,Identyfikator zdarzenia,Kategoria zadania
+Pełne,08.06.2025 15:01:24,Microsoft-Windows-PowerShell,4104,Execute a Remote Command,"Creating Scriptblock text (1 of 1):
+function Stop-ExecutionLog($startTime, $logPath, $targetHostname, $targetUser, $isWindows) {
+
+}
+
+ScriptBlock ID: 04928e0b-9281-40ba-a38c-b18bd238042f
+Path: C:\Program Files\WindowsPowerShell\Modules\Invoke-AtomicRedTeam\2.3.0\Public\Default-ExecutionLogger.psm1"
