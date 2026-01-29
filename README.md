@@ -14,8 +14,12 @@ The project evaluates the detection and mitigation capabilities of a Windows-bas
     * **PowerShell Logging:** Script Block Logging enabled (**Event ID 4104**).
     * **Windows Auditing:** Process Creation auditing enabled (**Event ID 4688**).
     * **Network Security:** Windows Defender Firewall (block-by-default mode).
-![Sysmon Installation](screens/01_sysmon_installation.png)
-*Deployment of Sysmon 64 with a customized schema for advanced telemetry collection.*
+<p align="center">
+  <img src="screens/01_sysmon_installation.png" >
+  <br>
+  <sub><i>Deployment and configuration of Sysmon using a customized XML schema.</i></sub>
+</p>
+
 ---
 
 ## Attack Scenarios and Mitigations
@@ -26,11 +30,23 @@ The project evaluates the detection and mitigation capabilities of a Windows-bas
 * **Mitigation (M1042):** Disabling the **"Server" (LanmanServer)** service and stopping it via `services.msc`.
 * **Result:** Re-scan confirmed ports 139 and 445 were no longer accessible.
 
+<p align="center">
+  <img src="screens/02_network_scanning_detection.png">
+  <br>
+  <sub><i>Detection of T1046 (Network Service Scanning) via Sysmon Event ID 3, showing source IP and target ports.</i></sub>
+</p>
+
 ### Scenario B: PowerShell Download and Execute (T1059.001)
 * **Attack:** Remote payload download and execution using PowerShell.
 * **Detection:** Over 40 entries in **PowerShell/Operational** (ID 4104). **Sysmon Event ID 1** and **Event ID 11** (File creation).
 * **Mitigation (M1049):** Windows Defender Real-time Protection.
 * **Result:** Initial attack was blocked by Defender. After disabling AV, the attack was fully logged by PowerShell Script Block Logging.
+
+<p align="center">
+  <img src="screens/03_powershell_logging.png">
+  <br>
+  <sub><i>Leveraging PowerShell Event ID 4104 (Script Block Logging) to capture and analyze malicious script content.</i></sub>
+</p>
 
 ### Scenario C: Process Injection (T1055)
 * **Attack:** Injecting code into legitimate processes to hide malicious activity.
@@ -38,11 +54,27 @@ The project evaluates the detection and mitigation capabilities of a Windows-bas
 * **Mitigation (M1040):** **Behavioral Prevention**. Implemented a Windows Task Scheduler task triggered by Sysmon Event ID 8, which executes a PowerShell script to kill the suspicious `powershell.exe` process.
 * **Result:** Automated response successfully terminated the attack upon detection of the injection attempt.
 
+<p align="center">
+  <img src="screens/04_sysmon_id8_injection.png">
+  <br>
+  <sub><i>Sysmon Event ID 8 (CreateRemoteThread) identifying a suspicious thread injection from mavinject.exe into notepad.exe.</i></sub>
+</p>
+<p align="center">
+  <img src="screens/05_automated_mitigation_setup.png">
+  <br>
+  <sub><i>Active Defense setup: Task Scheduler trigger configured to execute remediation scripts upon detection of Sysmon ID 8.</i></sub>
+</p>
 ### Scenario D: LSASS Memory Dumping (T1003.001)
 * **Attack:** Dumping LSASS memory using `rundll32.exe` and `comsvcs.dll, MiniDump`.
 * **Detection:** **Sysmon Event ID 10** (Process Access to `lsass.exe`) and **Security Event ID 4688**.
 * **Mitigation (M1025):** **Privileged Process Integrity**. Setting the Registry value `RunAsPPL` to `1` in `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa`.
 * **Result:** Kernel-level protection blocked unauthorized access to LSASS memory, preventing the dump file creation.
+
+<p align="center">
+  <img src="screens/06_lsass_protection_hardening.png">
+  <br>
+  <sub><i>Endpoint hardening: Enabling RunAsPPL protection via the Windows Registry to secure LSA memory.</i></sub>
+</p>
 
 ---
 
