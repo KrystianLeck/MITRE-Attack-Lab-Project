@@ -14,7 +14,8 @@ The project evaluates the detection and mitigation capabilities of a Windows-bas
     * **PowerShell Logging:** Script Block Logging enabled (**Event ID 4104**).
     * **Windows Auditing:** Process Creation auditing enabled (**Event ID 4688**).
     * **Network Security:** Windows Defender Firewall (block-by-default mode).
-
+![Sysmon Installation](screens/01_sysmon_installation.png)
+*Deployment of Sysmon 64 with a customized schema for advanced telemetry collection.*
 ---
 
 ## Attack Scenarios and Mitigations
